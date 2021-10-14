@@ -1,0 +1,49 @@
+{
+    "env": {
+        "node": "true",
+        "es2021": "true",
+        "jest": true
+    },
+    "extends": [
+        "airbnb-base",
+        "airbnb-typescript/base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:eslint-comments/recommended",
+        "plugin:jest/recommended",
+        "plugin:promise/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "@eslint-comments",
+        "jest",
+        "promise",
+        "import",
+        "prettier"
+    ],
+    "rules": {
+        "import/prefer-default-export": "off",
+        "no-console": ["error", {"allow": ["warn", "error"]}],
+        "import/newline-after-import": "warn",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": false
+            }
+        ]
+    },
+    "settings": {
+        "imports/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true,
+                "project": "tsconfig.json"
+            }
+        }
+    }
+}
