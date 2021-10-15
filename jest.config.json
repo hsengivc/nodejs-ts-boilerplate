@@ -15,7 +15,7 @@
     "testEnvironment": "node",
     "setupFiles": ["dotenv/config"],
     "coverageThreshold": {
-        "globale": {
+        "global": {
             "branches": 80,
             "functions": 80,
             "lines": 80,
