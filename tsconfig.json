@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "target": "ESNext",
     "module": "commonjs",
+    "rootDir": ".",
     "outDir": "dist",
     "removeComments": true,
     "esModuleInterop": true,
@@ -15,5 +16,5 @@
     }
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist", "__tests__", "coverage"]
+  "exclude": ["node_modules", "dist"]
 }
